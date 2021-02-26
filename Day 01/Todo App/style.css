@@ -62,9 +62,18 @@ body {
   width: 60px;
   margin-left: 5px;
   font-size: 20px;
+  opacity: 0.6;
+  pointer-events: none;
 }
+.inputField .btn.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .btn,
-.btn:focus {
+.btn:focus,
+.btn:active,
+.inputField .btn.active:focus {
   outline: none;
   box-shadow: none;
 }
@@ -72,8 +81,9 @@ body {
 .wrapper .tasks {
   padding: 0;
   margin: 25px 0;
-  max-height: 300px;
+  max-height: 200px;
   overflow-y: auto;
+  min-height: 200px;
 }
 
 .tasks li {
@@ -96,7 +106,7 @@ body {
   text-align: center;
   font-size: 20px;
   color: #fff;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 
 .tasks li:hover .btn-warning {
@@ -111,7 +121,7 @@ body {
   text-align: center;
   font-size: 20px;
   margin-right: 8px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .tasks li:hover .btn-success {
