@@ -24,37 +24,38 @@
     <title>Todo App</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header>Todo App</header>
+    <div class="wrapper shadow">
+      <header class="header">Todo App</header>
       <div class="inputField">
         <input type="text" placeholder="Enter Your Task Here" />
-        <div class="btn btn-primary"><i class="fas fa-plus"></i></div>
+        <button class="btn btn-primary"><i class="fas fa-plus"></i></button>
       </div>
-      <ul>
+      <ul class="tasks">
         <li>
-          Learn HTMl<span
-            ><i class="fas fa-check"></i><i class="fas fa-times"></i
-          ></span>
+          Learn HTMl
+          <button class="btn btn-success"><i class="fas fa-check"></i></button>
+          <button class="btn btn-warning"><i class="fas fa-times"></i></button>
         </li>
         <li>
-          Learn CSS<span
-            ><i class="fas fa-check"></i><i class="fas fa-times"></i
-          ></span>
+          Learn CSS
+          <button class="btn btn-success"><i class="fas fa-check"></i></button>
+          <button class="btn btn-warning"><i class="fas fa-times"></i></button>
         </li>
         <li>
-          Learn Javascript<span
-            ><i class="fas fa-check"></i><i class="fas fa-times"></i
-          ></span>
+          Learn JavaScript
+          <button class="btn btn-success"><i class="fas fa-check"></i></button>
+          <button class="btn btn-warning"><i class="fas fa-times"></i></button>
         </li>
         <li>
-          Learn ReactJS<span
-            ><i class="fas fa-check"></i><i class="fas fa-times"></i
-          ></span>
+          Save The World!
+          <button class="btn btn-success"><i class="fas fa-check"></i></button>
+          <button class="btn btn-warning"><i class="fas fa-times"></i></button>
         </li>
+        
       </ul>
       <div class="footer">
-        <span>You have 4 pending tasks</span>
-        <div class="btn btn-danger"><i class="fas fa-trash"></i></div>
+        <div>You have 4 pending tasks</div>
+        <button class="btn btn-danger">Clear All</i></button>
       </div>
     </div>
     <script
@@ -62,5 +63,6 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
