@@ -1,6 +1,7 @@
 const inputField = document.querySelector(".inputField input");
 const addTaskBtn = document.querySelector(".inputField button");
 const task = document.querySelector(".tasks");
+
 const deleteAllBtn = document.querySelector(".footer button");
 
 inputField.onkeyup = () => {
@@ -21,6 +22,7 @@ addTaskBtn.onclick = () => {
     todoArr = JSON.parse(getLocalStorage);
   }
   todoArr.push(inputText);
+  addTaskBtn.classList.remove("active");
   localStorage.setItem("Add Todo", JSON.stringify(todoArr));
   showTask();
 };
@@ -32,15 +34,16 @@ const showTask = () => {
   } else {
     todoArr = JSON.parse(getLocalStorage);
   }
+  if (todoArr.length == 0) {
+    deleteAllBtn.classList.remove("active");
+  } else {
+    deleteAllBtn.classList.add("active");
+  }
   const taskNum = document.querySelector(".taskNum");
   taskNum.textContent = todoArr.length;
   let newListItem = "";
   todoArr.forEach((i, index) => {
-    newListItem += `<li>
-                      ${i}
-                      <button class="btn btn-success" onClick = "taskCompleted()" ><i class="fas fa-check"></i></button>
-                      <button class="btn btn-warning" onClick = "deleteTask(${index})" ><i class="fas fa-times"></i></button>
-                    </li>`;
+    newListItem += `<li>${i}<button class="btn btn-danger" onClick = "deleteTask(${index})" ><i class="fas fa-times"></i></button></li>`;
   });
   task.innerHTML = newListItem;
   inputField.value = "";
