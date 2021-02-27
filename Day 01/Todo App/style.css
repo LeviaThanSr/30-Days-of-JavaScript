@@ -24,7 +24,7 @@ body {
 
 .wrapper {
   background-color: white;
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
   padding: 25px;
   border-radius: 5px;
@@ -33,7 +33,7 @@ body {
 .wrapper .header {
   font-size: 40px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -146,4 +146,16 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: rgb(148, 148, 148);
+}
+
+@media only screen and (max-width: 568px) {
+  .wrapper {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .wrapper {
+    max-width: 300px;
+  }
 }
