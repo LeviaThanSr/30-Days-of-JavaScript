@@ -19,11 +19,11 @@ body {
 }
 
 h2 {
-  margin: 40px;
+  margin: 50px;
 }
 
 .controls {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 input {
@@ -36,6 +36,7 @@ img {
   filter: blur(var(--blur));
   max-width: 100%;
   height: auto;
+  width: 500px;
 }
 
 .hl {
