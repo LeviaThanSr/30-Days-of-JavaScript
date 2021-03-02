@@ -95,7 +95,9 @@ body {
   border-radius: 3px;
   margin-bottom: 8px;
   padding: 0 15px;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .tasks li .btn-danger {
@@ -122,6 +124,10 @@ body {
   padding-left: 15px;
 }
 
+.taskNum {
+  color: rgb(0, 172, 23);
+  font-weight: bold;
+}
 .wrapper .footer .btn {
   width: 98px;
   text-align: center;
