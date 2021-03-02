@@ -115,7 +115,7 @@ body {
 .clock .hand.minute {
   width: 7px;
   height: 35%;
-  background-color: black;
+  background-color: rgb(0, 91, 165);
 }
 .clock .hand.hour {
   width: 10px;
