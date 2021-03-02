@@ -8,4 +8,4 @@
 
 **Day 04** --> [Image-Gallery](https://image-gallery-sr.netlify.app/)
 
-**Day 05** --> [City-Filter](<a href="https://moroccan-city-filter.netlify.app/" target="_blank"></a>)
+**Day 05** --> [City-Filter](https://moroccan-city-filter.netlify.app/)
