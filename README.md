@@ -9,3 +9,5 @@
 **Day 04** --> [Image-Gallery](https://image-gallery-sr.netlify.app/)
 
 **Day 05** --> [City-Filter](https://moroccan-city-filter.netlify.app/)
+
+**Day 06** --> [Drawing-Board](https://drawing-board-sr.netlify.app/)
