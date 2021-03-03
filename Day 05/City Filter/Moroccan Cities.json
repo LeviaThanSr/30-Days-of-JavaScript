@@ -154,6 +154,17 @@
         "population_proper": "108753"
     }, 
     {
+        "city": "B\u00e9ni Mellal", 
+        "lat": "32.3373", 
+        "lng": "-6.3498", 
+        "country": "Morocco", 
+        "iso2": "MA", 
+        "admin_name": "B\u00e9ni Mellal-Kh\u00e9nifra", 
+        "capital": "admin", 
+        "population": "230,676", 
+        "population_proper": ""
+    },
+    {
         "city": "Mohammedia", 
         "lat": "33.6833", 
         "lng": "-7.3833", 
@@ -614,16 +625,5 @@
         "capital": "", 
         "population": "33105", 
         "population_proper": "33105"
-    }, 
-    {
-        "city": "B\u00e9ni Mellal", 
-        "lat": "32.3373", 
-        "lng": "-6.3498", 
-        "country": "Morocco", 
-        "iso2": "MA", 
-        "admin_name": "B\u00e9ni Mellal-Kh\u00e9nifra", 
-        "capital": "admin", 
-        "population": "230,676", 
-        "population_proper": ""
     }
 ]
