@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -13,7 +19,39 @@
     <title>Drawing Board</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="center">
+      <div>
+        <label for="background">Background Color</label>
+        <input id="background" type="color" value="#ffffff" />
+      </div>
+      <div>
+        <label for="color">Stroke Style</label>
+        <input
+          id="color"
+          type="color"
+          value="#34c9eb"
+          onchange="this.setAttribute('value',this.value);"
+        />
+      </div>
+      <div>
+        <label for="brushWidthSlider">Line Width</label>
+        <input
+          id="brushWidthSlider"
+          type="range"
+          min="1"
+          max="200"
+          value="25"
+          onchange="this.setAttribute('value',this.value);"
+        />
+      </div>
+      <div class="btn btn-primary" id="reset">Reset</div>
+    </div>
+    <canvas id="draw" width="100" height="800"></canvas>
     <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
