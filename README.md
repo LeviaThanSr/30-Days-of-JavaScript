@@ -10,4 +10,4 @@
 
 **Day 05** --> [City-Filter](https://moroccan-city-filter.netlify.app/)
 
-**Day 06** --> [Drawing-Board](https://drawing-board-sr.netlify.app/)
+**Day 06** --> [Drawing-Board](https://drawing-board-levisr.netlify.app/)
