@@ -23,14 +23,9 @@ body {
   overflow: hidden;
 }
 
-.player:fullscreen {
+.fullscreen {
   max-width: none;
-  width: 100%;
-}
-
-.player:-webkit-full-screen {
-  max-width: none;
-  width: 100%;
+  width: 80%;
 }
 
 .player__video {
@@ -47,10 +42,6 @@ body {
   padding: 0;
   cursor: pointer;
   max-width: 50px;
-}
-
-.player__button:focus {
-  border-color: #ffc600;
 }
 
 .player__slider {
@@ -99,6 +90,10 @@ body {
   flex-basis: 50%;
 }
 
+.expand,
+.toggle {
+  font-size: 20px;
+}
 input[type="range"] {
   -webkit-appearance: none;
   background: transparent;
