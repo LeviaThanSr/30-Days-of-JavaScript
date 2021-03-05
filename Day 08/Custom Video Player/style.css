@@ -93,7 +93,14 @@ body {
 .expand,
 .toggle {
   font-size: 20px;
+  transition: 0.3s ease;
 }
+
+.expand:hover,
+.toggle:hover {
+  color: #3291e4;
+}
+
 input[type="range"] {
   -webkit-appearance: none;
   background: transparent;
@@ -113,6 +120,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 1.3px;
   border: 0.2px solid rgba(1, 1, 1, 0);
+  transition: 0.3s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb {
