@@ -5,8 +5,48 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background: url("https://i.ibb.co/gWmM68H/background.jpg") bottom center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
 }
 
-h1 {
-  font-weight: 400;
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 5.5rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 0.5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #3291e4;
+  box-shadow: 0 0 1rem #3291e4;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #3291e4;
 }
