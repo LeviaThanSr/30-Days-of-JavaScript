@@ -1,12 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Martel Sans", sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 
 h1 {
-  font-weight: 400;
+  text-shadow: 0 0 0 white;
+  font-size: 100px;
+  font-weight: 900;
 }
