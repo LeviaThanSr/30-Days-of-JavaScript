@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background: #536976;
-  background: linear-gradient(to right, #292e49, #536976);
+  background: linear-gradient(to right, #292e49, #415a68);
   display: flex;
   min-height: 100vh;
   justify-content: center;
@@ -20,9 +20,9 @@ body {
 
 .header {
   width: 350px;
-  height: 220px;
-  background-image: url("https://i.ibb.co/mHdNQD2/craig-davies-Jkps9-Qj-LIKI-unsplash-1.jpg");
-  background-size: 130%;
+  height: 200px;
+  background-image: url("img.jpg");
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 15px 15px 0 0;
@@ -76,11 +76,11 @@ body {
 }
 
 .item {
-  width: 380px;
+  width: 350px;
   height: 45px;
   min-height: 45px;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ccc;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -90,7 +90,7 @@ body {
   position: absolute;
   font-size: 25px;
   padding-left: 5px;
-  left: 15px;
+  left: 10px;
   top: 10px;
 }
 
@@ -108,9 +108,12 @@ body {
   margin: 0;
   font-size: 20px;
   left: 50px;
-  top: 5px;
+  top: 7.5px;
   background-color: #fff;
-  max-width: 285px;
+  max-width: 265px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .lineThrough {
@@ -121,8 +124,8 @@ body {
 .item i.delete {
   position: absolute;
   font-size: 25px;
-  right: 15px;
-  top: 10px;
+  right: 20px;
+  top: 8px;
 }
 
 .item i.delete:hover {
@@ -146,15 +149,20 @@ body {
 
 .add-to-do i {
   position: absolute;
-  font-size: 40px;
+  font-size: 35px;
   color: #2c7dc4;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
+.add-to-do i:hover {
+  color: #205b8f;
+}
 .add-to-do input {
   position: absolute;
-  left: 50px;
+  left: 45px;
   height: 35px;
-  width: 300px;
+  width: 280px;
   background-color: transparent;
   border: none;
   outline: none;
@@ -162,7 +170,7 @@ body {
   padding-left: 10px;
 }
 
-.add-to-do input::-webkit-input-placeholder {
+.add-to-do input::placeholder {
   color: #2c7dc4;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
