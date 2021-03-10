@@ -24,17 +24,19 @@
     <title>Todo App</title>
   </head>
   <body>
-    <div class="wrapper shadow">
-      <header class="header">Todo App</header>
-      <div class="inputField">
-        <input type="text" placeholder="Enter Your Task Here" />
-        <button class="btn btn-primary"><i class="fas fa-plus"></i></button>
+    <div class="container">
+      <div class="header">
+        <div class="clear">
+          <i class="fas fa-sync-alt"></i>
+        </div>
+        <div id="date"></div>
       </div>
-      <ul class="tasks">
-      </ul>
-      <div class="footer">
-        <div>You have <span class="taskNum">0</span> pending tasks</div>
-        <button class="btn btn-danger">Clear All</i></button>
+      <div class="content">
+        <ul id="list"></ul>
+      </div>
+      <div class="add-to-do">
+        <i class="fa fa-plus-circle"></i>
+        <input type="text" id="input" placeholder="Add a to-do" />
       </div>
     </div>
     <script
