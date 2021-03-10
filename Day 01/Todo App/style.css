@@ -1,167 +1,169 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background: rgb(128, 255, 177);
-  background: linear-gradient(
-    135deg,
-    rgba(128, 255, 177, 1) 0%,
-    rgba(157, 255, 251, 1) 38%,
-    rgba(25, 141, 164, 1) 100%
-  );
-  background-attachment: fixed;
-  height: 100vh;
+  background: #536976;
+  background: linear-gradient(to right, #292e49, #536976);
   display: flex;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
-.wrapper {
-  background-color: white;
-  max-width: 450px;
-  width: 100%;
-  padding: 25px;
-  border-radius: 5px;
+.container {
+  padding: 10px;
+  width: 370px;
 }
 
-.wrapper .header {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  text-align: center;
+.header {
+  width: 350px;
+  height: 220px;
+  background-image: url("https://i.ibb.co/mHdNQD2/craig-davies-Jkps9-Qj-LIKI-unsplash-1.jpg");
+  background-size: 130%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
 }
 
-.wrapper .inputField {
-  display: flex;
+.clear {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.clear i {
+  font-size: 30px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.clear i:hover {
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(45deg);
+}
+
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  width: 350px;
+  height: 340px;
+  max-height: 350px;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  width: 380px;
   height: 45px;
-  width: 100%;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.inputField input {
-  width: 90%;
-  height: 100%;
-  border: 1px solid #ccc;
-  font-size: 17px;
-  border-radius: 3px;
-  padding-left: 15px;
-  caret-color: #0275d8;
-  outline: none;
+.item i.co {
+  position: absolute;
+  font-size: 25px;
+  padding-left: 5px;
+  left: 15px;
+  top: 10px;
 }
 
-.inputField .btn {
+.item i.co:hover {
+  cursor: pointer;
+}
+
+.fa-check-circle {
+  color: #6eb200;
+}
+
+.item p.text {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  left: 50px;
+  top: 5px;
+  background-color: #fff;
+  max-width: 285px;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.item i.delete {
+  position: absolute;
+  font-size: 25px;
+  right: 15px;
+  top: 10px;
+}
+
+.item i.delete:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+
+.add-to-do {
+  position: relative;
+  width: 350px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.add-to-do i {
+  position: absolute;
+  font-size: 40px;
+  color: #2c7dc4;
+}
+
+.add-to-do input {
+  position: absolute;
+  left: 50px;
+  height: 35px;
+  width: 300px;
+  background-color: transparent;
   border: none;
   outline: none;
-  box-shadow: none;
-  height: 100%;
-  width: 60px;
-  margin-left: 5px;
   font-size: 20px;
-  opacity: 0.6;
-  pointer-events: none;
-}
-.inputField .btn.active {
-  opacity: 1;
-  pointer-events: auto;
+  padding-left: 10px;
 }
 
-.btn,
-.btn:focus,
-.btn:active,
-.inputField .btn.active:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.wrapper .tasks {
-  padding: 0;
-  margin: 25px 0;
-  max-height: 200px;
-  overflow-y: auto;
-  min-height: 220px;
-}
-
-.tasks li {
-  position: relative;
-  list-style: none;
-  height: 45px;
-  line-height: 45px;
-  background-color: #f2f2f2;
-  border-radius: 3px;
-  margin-bottom: 8px;
-  padding: 0 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.tasks li .btn-danger {
-  position: absolute;
-  right: -45px;
-  width: 45px;
-  height: 100%;
-  text-align: center;
+.add-to-do input::-webkit-input-placeholder {
+  color: #2c7dc4;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
-  color: #fff;
-  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.tasks li:hover .btn-danger {
-  right: 0px;
-}
-
-.wrapper .footer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding-left: 15px;
-}
-
-.taskNum {
-  color: rgb(0, 172, 23);
-  font-weight: bold;
-}
-.wrapper .footer .btn {
-  width: 98px;
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.wrapper .footer .btn.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(148, 148, 148);
-}
-
-@media only screen and (max-width: 568px) {
-  .wrapper {
-    max-width: 350px;
-  }
-}
-
-@media only screen and (max-width: 368px) {
-  .wrapper {
-    max-width: 300px;
-  }
 }
