@@ -45,14 +45,13 @@ body {
 
 .clear i:hover {
   cursor: pointer;
-  text-shadow: 1px 3px 5px #000;
   transform: rotate(45deg);
 }
 
 #date {
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 18px;
   color: #fff;
   font-size: 25px;
   font-family: "Poppins", sans-serif;
@@ -86,7 +85,7 @@ body {
   margin: 0;
 }
 
-.item i.co {
+.item .check {
   position: absolute;
   font-size: 25px;
   padding-left: 5px;
@@ -94,15 +93,20 @@ body {
   top: 10px;
 }
 
-.item i.co:hover {
+.item .check:hover {
   cursor: pointer;
 }
 
 .fa-check-circle {
-  color: #6eb200;
+  color: #2bb900;
 }
 
-.item p.text {
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.item .text {
   position: absolute;
   padding: 0;
   margin: 0;
@@ -116,20 +120,15 @@ body {
   white-space: nowrap;
 }
 
-.lineThrough {
-  text-decoration: line-through;
-  color: #ccc;
-}
-
-.item i.delete {
+.item .delete {
   position: absolute;
   font-size: 25px;
   right: 20px;
   top: 8px;
 }
 
-.item i.delete:hover {
-  color: #af0000;
+.item .delete:hover {
+  color: #f10404;
   cursor: pointer;
 }
 
