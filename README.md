@@ -25,3 +25,5 @@
 **Day 12** --> [Click-Drag](https://click-drag-sr.netlify.app/)
 
 **Day 13** --> [Speech-Detection](https://speech-detection-sr.netlify.app/)
+
+**Day 14** --> [Sticky-Nav](https://sticky-nav-sr.netlify.app/)
