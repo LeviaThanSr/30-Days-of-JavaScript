@@ -27,3 +27,5 @@
 **Day 13** --> [Speech-Detection](https://speech-detection-sr.netlify.app/)
 
 **Day 14** --> [Sticky-Nav](https://sticky-nav-sr.netlify.app/)
+
+**Day 15** --> [Speech-Synthesis](https://speech-synthesis-sr.netlify.app/)
