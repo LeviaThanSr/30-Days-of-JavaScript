@@ -35,6 +35,9 @@ h1 {
   color: white;
 }
 
+option {
+  width: 20rem;
+}
 .voiceinator input,
 .voiceinator button,
 .voiceinator select {
