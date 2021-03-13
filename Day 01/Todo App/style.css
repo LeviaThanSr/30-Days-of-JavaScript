@@ -155,7 +155,7 @@ body {
 }
 
 .add-to-do i:hover {
-  color: #205b8f;
+  opacity: 0.9;
 }
 .add-to-do input {
   position: absolute;
