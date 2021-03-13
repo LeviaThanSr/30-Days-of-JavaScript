@@ -85,7 +85,7 @@ nav ul {
   height: 20px;
   display: block;
   background: white;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-20%) rotate(45deg);
 }
 
 .bio {
@@ -113,7 +113,6 @@ nav ul {
 
 .dropdown a {
   text-decoration: none;
-  color: #ffc600;
 }
 
 a.button {
@@ -122,6 +121,7 @@ a.button {
   padding: 10px;
   color: white;
   margin-bottom: 10px;
+  min-width: 200px;
 }
 
 .button[href*="twitter"] {
@@ -132,4 +132,7 @@ a.button {
 }
 .button[href*="github"] {
   background: #000000;
+}
+.button[href*="giphy"] {
+  background: #f80000;
 }
