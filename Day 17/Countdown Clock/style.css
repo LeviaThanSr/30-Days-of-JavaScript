@@ -5,8 +5,82 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background: rgb(139, 54, 60);
+  background: linear-gradient(
+    237deg,
+    rgba(139, 54, 60, 1) 2%,
+    rgba(63, 20, 71, 1) 55%,
+    rgba(34, 7, 75, 1) 86%
+  );
+  text-align: center;
 }
 
-h1 {
-  font-weight: 400;
+.display__time-left {
+  font-weight: 100;
+  font-size: 20rem;
+  margin: 0;
+  color: white;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.timer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.timer__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.timer__controls > * {
+  flex: 1;
+}
+
+.timer__controls form {
+  flex: 1;
+  display: flex;
+}
+
+.timer__controls input {
+  flex: 1;
+  border: 0;
+  padding: 1rem;
+  outline: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.timer__button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: 0.2s ease;
+}
+
+.timer__button:hover,
+.timer__button:focus {
+  background: rgba(0, 0, 0, 0.4);
+  outline: 0;
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.display__end-time {
+  font-size: 4rem;
+  color: white;
 }
