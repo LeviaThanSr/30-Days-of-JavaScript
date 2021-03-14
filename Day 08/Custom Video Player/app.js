@@ -6,6 +6,7 @@ const toggle = player.querySelector(".toggle");
 const skipButtons = player.querySelectorAll("[data-skip]");
 const fullScreen = player.querySelector(".expand");
 const ranges = player.querySelectorAll(".player__slider");
+const volumeCtr = player.querySelector(".volume");
 
 function togglePlay() {
   video[video.paused ? "play" : "pause"]();
@@ -31,6 +32,11 @@ function handleFullScreen() {
 
 function handleRange() {
   video[this.name] = this.value;
+  if (video.volume === 0) {
+    volumeCtr.innerHTML = `<i class="fas fa-volume-mute"></i>`;
+  } else {
+    volumeCtr.innerHTML = `<i class="fas fa-volume-up"></i>`;
+  }
 }
 
 function handleProgress() {
