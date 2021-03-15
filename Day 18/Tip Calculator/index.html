@@ -6,10 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="https://i.ibb.co/pZ5NT6G/tip.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Tip Calculator</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="calculator">
+      <div>
+        <header>
+          <h1>Tip Calculator</h1>
+        </header>
+        <main>
+          <section class="options">
+            <div class="input-group">
+              <input
+                type="number"
+                min="1"
+                class="cost"
+                placeholder="How much was the bill?"
+              />
+              <div class="pre"><i class="fas fa-dollar-sign"></i></div>
+            </div>
+            <div class="input-group">
+              <select id="select" class="service" required>
+                <option disabled selected class="placeholder">
+                  How was your service?
+                </option>
+                <option value="30">Outstanding</option>
+                <option value="20">Amazing</option>
+                <option value="10">Good</option>
+                <option value="5">Alright</option>
+                <option value="0">Terrible</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <input
+                type="number"
+                min="1"
+                class="people"
+                placeholder="How many are sharing the bill?"
+              />
+            </div>
+          </section>
+          <section class="tip-wrap">
+            <p>You should tip :</p>
+            <h3 class="tip"><i class="fas fa-dollar-sign"></i> 0</h3>
+          </section>
+        </main>
+        <footer>
+          <button id="calc-btn">Calculate</button>
+        </footer>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
