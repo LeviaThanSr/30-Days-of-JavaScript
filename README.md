@@ -33,3 +33,5 @@
 **Day 16** --> [Follow-Along-Dropdown](https://dropdown-sr.netlify.app/)
 
 **Day 17** --> [Countdown-Clock](https://countdown-clock-sr.netlify.app/)
+
+**Day 18** --> [Tip-Calculator](https://tip-calc-sr.netlify.app/)
