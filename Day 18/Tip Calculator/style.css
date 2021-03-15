@@ -61,7 +61,7 @@ input {
   background: none;
   display: block;
   width: 100%;
-  padding: 18px;
+  padding: 18px 25px;
   color: #212121;
   font-size: 20px;
 }
@@ -76,7 +76,7 @@ select {
   border-radius: 0px;
   color: #212121;
   font-size: 20px;
-  padding: 18px;
+  padding: 18px 25px;
 }
 
 option:disabled {
@@ -99,7 +99,7 @@ p {
 
 .tip {
   color: rgb(0, 0, 0);
-  width: 50%;
+  width: 90%;
   text-align: center;
   font-size: 35px;
   margin-top: 0;
