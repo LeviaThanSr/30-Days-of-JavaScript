@@ -2,18 +2,20 @@ const costInput = document.querySelector(".cost");
 const serviceInput = document.querySelector(".service");
 const peopleInput = document.querySelector(".people");
 const calcBtn = document.querySelector("#calc-btn");
-let tip = document.querySelector(".tip-wrap .tip");
+const tip = document.querySelector(".tip-wrap .tip");
 
-function calculateTip() {
-  const cost = Number(costInput.value);
-  const service = Number(serviceInput.value) / 100;
-  const people = Number(peopleInput.value);
+function calculateTip(e) {
+  if (e.keyCode === 13) {
+    const cost = Number(costInput.value);
+    const service = Number(serviceInput.value) / 100;
+    const people = Number(peopleInput.value);
 
-  let result = (cost * service) / people;
-
-  tip.innerHTML = `<i class="fas fa-dollar-sign"></i> ${result.toFixed(2)} ${
-    people > 1 ? "each" : ""
-  }`;
+    let result = (cost * service) / people;
+    tip.innerHTML = `<i class="fas fa-dollar-sign"></i> ${result.toFixed(2)} ${
+      people > 1 ? "each" : ""
+    }`;
+  }
 }
 
 calcBtn.addEventListener("click", calculateTip);
+document.addEventListener("keyup", calculateTip);
