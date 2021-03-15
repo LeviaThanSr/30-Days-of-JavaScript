@@ -5,8 +5,124 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(56deg, #393326, #a5bdd5);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}
+
+header {
+  padding: 10px 15px;
+  background: #000000;
+  margin-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 h1 {
-  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #212121;
+  font-size: 20px;
+  width: 50px;
+  background: #eee;
+  border-bottom: 3px solid #212121;
+}
+
+input {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 100%;
+  padding: 18px;
+  color: #212121;
+  font-size: 20px;
+}
+
+select {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 100%;
+  border-radius: 0px;
+  color: #212121;
+  font-size: 20px;
+  padding: 18px;
+}
+
+option:disabled {
+  color: #757575;
+}
+
+.tip-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #e2e2e2;
+}
+
+p {
+  color: #212121;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.tip {
+  color: rgb(0, 0, 0);
+  width: 50%;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: #000000;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #00b84d;
 }
