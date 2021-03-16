@@ -54,7 +54,7 @@ body.wrong {
   padding: 5px 10px;
   color: white;
   outline: none;
-  font-size: 30px;
+  font-size: 25px;
   background-color: hsl(var(--hue), 200%, 40%);
   transition: 0.2s ease;
 }
