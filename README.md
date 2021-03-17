@@ -37,3 +37,5 @@
 **Day 18** --> [Tip-Calculator](https://tip-calc-sr.netlify.app/)
 
 **Day 19** --> [Quiz-App](https://quiz-app-sr.netlify.app/)
+
+**Day 20** --> [Whack-a-Mole](https://whack-a-mole-sr.netlify.app/)
