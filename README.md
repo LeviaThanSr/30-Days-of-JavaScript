@@ -39,3 +39,5 @@
 **Day 19** --> [Quiz-App](https://quiz-app-sr.netlify.app/)
 
 **Day 20** --> [Whack-a-Mole](https://whack-a-mole-sr.netlify.app/)
+
+**Day 21** --> [Random-Password-Generator](https://random-password-generator-sr.netlify.app/)
