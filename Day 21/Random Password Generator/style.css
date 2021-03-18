@@ -34,6 +34,7 @@ input {
   padding: 0 20px;
   background-color: transparent;
   font-size: 24px;
+  font-family: Consolas;
   letter-spacing: 4px;
   border-radius: 8px;
   color: #333;
@@ -61,10 +62,45 @@ input::placeholder {
 }
 
 #btn:hover {
-  background-color: green;
+  opacity: 0.9;
 }
 
 #btn:active {
   transform: scale(0.98);
-  opacity: 0.8;
+}
+
+.copy {
+  position: absolute;
+  top: 125px;
+  right: 15px;
+}
+
+.copy i {
+  font-size: 40px;
+  color: #757575;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.copy i:hover {
+  color: #333;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #f8f8f8;
+  background-color: #000000;
+  text-align: center;
+  font-size: 4em;
+  display: none;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
