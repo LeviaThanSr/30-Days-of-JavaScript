@@ -1,5 +1,7 @@
 const passwordOutput = document.getElementById("password");
 const GeneratePasswordBtn = document.getElementById("btn");
+const copyBtn = document.querySelector(".copy i");
+const alertBox = document.querySelector(".alert");
 
 function GeneratePassword(e) {
   let characters =
@@ -13,10 +15,27 @@ function GeneratePassword(e) {
   }
 
   passwordOutput.value = password;
+  alertBox.innerHTML = `${password} <br> Copied!`;
 
   setTimeout(() => {
     passwordOutput.value = "";
-  }, 5000);
+    password = "";
+  }, 3000);
+}
+
+function copyPassword(e) {
+  if (e.isTrusted) {
+    let copiedText = passwordOutput;
+    copiedText.select();
+    copiedText.setSelectionRange(0, 9999);
+    document.execCommand("copy");
+    alertBox.classList.add("active");
+
+    setTimeout(() => {
+      alertBox.classList.remove("active");
+    }, 3000);
+  }
 }
 
 GeneratePasswordBtn.addEventListener("click", GeneratePassword);
+copyBtn.addEventListener("click", copyPassword);
