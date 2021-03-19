@@ -41,3 +41,5 @@
 **Day 20** --> [Whack-a-Mole](https://whack-a-mole-sr.netlify.app/)
 
 **Day 21** --> [Random-Password-Generator](https://random-password-generator-sr.netlify.app/)
+
+**Day 22** --> [Color-Palette](https://color-palette-sr.netlify.app/)
