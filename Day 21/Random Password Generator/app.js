@@ -24,7 +24,7 @@ function GeneratePassword(e) {
 }
 
 function copyPassword(e) {
-  if (e.isTrusted) {
+  if (e.isTrusted && passwordOutput.value !== "") {
     let copiedText = passwordOutput;
     copiedText.select();
     copiedText.setSelectionRange(0, 9999);
