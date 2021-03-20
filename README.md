@@ -43,3 +43,5 @@
 **Day 21** --> [Random-Password-Generator](https://random-password-generator-sr.netlify.app/)
 
 **Day 22** --> [Color-Palette](https://color-palette-sr.netlify.app/)
+
+**Day 23** --> [Lorem-Ipsum](https://lorem-ipsum-sr.netlify.app/)
