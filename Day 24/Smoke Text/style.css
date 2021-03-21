@@ -11,6 +11,51 @@ body {
   background-color: #f8f8f8;
 }
 
-h1 {
-  font-weight: 400;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+}
+
+.text {
+  position: relative;
+  margin: 20px;
+  max-width: 70%;
+  user-select: none;
+  font-size: 25px;
+  text-align: center;
+}
+
+span {
+  position: relative;
+  display: inline-block;
+}
+
+span.active {
+  animation: smoke 3s linear forwards;
+  transform-origin: bottom;
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    pointer-events: none;
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(400px) translateY(-400px) rotate(200deg) scale(5);
+  }
 }
