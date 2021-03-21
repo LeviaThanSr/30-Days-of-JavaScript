@@ -13,10 +13,12 @@ body {
 }
 
 .section-center {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
-  max-width: 70%;
-  margin-top: 5rem;
+  max-width: 90%;
   text-align: left;
 }
 
@@ -48,6 +50,7 @@ input {
   background: transparent;
   font-weight: bold;
   text-align: center;
+  outline: none;
 }
 
 .btn {
@@ -75,6 +78,20 @@ p {
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
 .result {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .lorem-form {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+  p {
+    padding: 10px 10px;
+  }
 }
