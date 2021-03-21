@@ -45,3 +45,5 @@
 **Day 22** --> [Color-Palette](https://color-palette-sr.netlify.app/)
 
 **Day 23** --> [Lorem-Ipsum](https://lorem-ipsum-sr.netlify.app/)
+
+**Day 24** --> [Lorem-Ipsum](https://smoke-text-js.netlify.app/)
