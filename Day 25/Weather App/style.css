@@ -60,7 +60,6 @@ body {
 .weather-container {
   width: 300px;
   height: 260px;
-  background-color: #f4f9ff;
 }
 
 .weather-icon {
@@ -80,7 +79,6 @@ body {
 
 .temperature-value p {
   padding: 0;
-  margin: 10px;
   color: #293251;
   font-size: 5em;
   text-align: center;
@@ -98,7 +96,7 @@ body {
 
 .temperature-description p {
   padding: 0;
-  margin: 10px;
+  margin: 0px 0 10px 0;
   color: #293251;
   text-align: center;
   font-size: 2em;
