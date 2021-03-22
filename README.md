@@ -46,4 +46,6 @@
 
 **Day 23** --> [Lorem-Ipsum](https://lorem-ipsum-sr.netlify.app/)
 
-**Day 24** --> [Lorem-Ipsum](https://smoke-text-js.netlify.app/)
+**Day 24** --> [Smoke-Text](https://smoke-text-js.netlify.app/)
+
+**Day 25** --> [Weather-App](https://weather-app-sr.netlify.app/)
