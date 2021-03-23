@@ -49,3 +49,5 @@
 **Day 24** --> [Smoke-Text](https://smoke-text-js.netlify.app/)
 
 **Day 25** --> [Weather-App](https://weather-app-sr.netlify.app/)
+
+**Day 26** --> [Cool-Tabs](https://cool-tabs-sr.netlify.app/)
