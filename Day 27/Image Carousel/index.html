@@ -10,10 +10,50 @@
       type="image/png"
       href="https://i.ibb.co/CnNx5tb/Img-carousel.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Image Carousel</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Image Carousel</h1>
+    <div class="container">
+      <button class="btn left-btn hide">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="carousel-container">
+        <ul class="carousel">
+          <li class="slide active">
+            <img src="img2/1.jpg" alt="" />
+          </li>
+          <li class="slide">
+            <img src="img2/2.jpg" alt="" />
+          </li>
+          <li class="slide">
+            <img src="img2/3.jpg" alt="" />
+          </li>
+          <li class="slide">
+            <img src="img2/4.jpg" alt="" />
+          </li>
+          <li class="slide">
+            <img src="img2/5.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <button class="btn right-btn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="nav">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
