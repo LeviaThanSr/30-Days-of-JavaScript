@@ -51,3 +51,5 @@
 **Day 25** --> [Weather-App](https://weather-app-sr.netlify.app/)
 
 **Day 26** --> [Cool-Tabs](https://cool-tabs-sr.netlify.app/)
+
+**Day 27** --> [Image-Carousel](https://image-carousel-sr.netlify.app/)
