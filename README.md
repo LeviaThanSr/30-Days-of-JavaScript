@@ -53,3 +53,5 @@
 **Day 26** --> [Cool-Tabs](https://cool-tabs-sr.netlify.app/)
 
 **Day 27** --> [Image-Carousel](https://image-carousel-sr.netlify.app/)
+
+**Day 28** --> [JS-Calculator](https://calculator-sr.netlify.app/)
