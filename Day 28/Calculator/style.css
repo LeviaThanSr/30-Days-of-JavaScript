@@ -72,5 +72,57 @@ body {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   border: 2px solid #1d1d1d;
-  height: 340px;
+  height: 385px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row button {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.row button:hover {
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.row #calculate {
+  color: #fff;
+  background-color: #5cb85c;
+  width: 130px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.row #delete {
+  font-size: 30px;
+  color: #da1e11;
+}
+
+.row #clear {
+  font-weight: bold;
+  color: white;
+  background-color: #da1e11;
+}
+
+#division,
+#multiplication,
+#subtraction,
+#addition,
+#percent {
+  color: #0275d8;
+  font-size: 30px;
+  font-weight: bold;
 }
