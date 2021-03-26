@@ -55,3 +55,5 @@
 **Day 27** --> [Image-Carousel](https://image-carousel-sr.netlify.app/)
 
 **Day 28** --> [JS-Calculator](https://calculator-sr.netlify.app/)
+
+**Day 29** --> [Popup-Card](https://popup-card-sr.netlify.app/)
