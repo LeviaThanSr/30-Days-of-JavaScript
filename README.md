@@ -57,3 +57,5 @@
 **Day 28** --> [JS-Calculator](https://calculator-sr.netlify.app/)
 
 **Day 29** --> [Popup-Card](https://popup-card-sr.netlify.app/)
+
+**Day 30** --> [Ping-Pong-Game](https://ping-pong-game-sr.netlify.app/)
