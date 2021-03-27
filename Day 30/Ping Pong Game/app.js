@@ -69,12 +69,13 @@ function drawScore(score, x, y) {
 }
 
 function renderGame() {
+  drawRectangle(0, 0, canvas.width, canvas.height, "#000");
+  drawRectangle(user.x, user.y, user.width, user.height, user.color);
+  drawScore(user.score, canvas.width / 4, canvas.height / 5);
   drawNet();
   drawBall(ball.x, ball.y, ball.radius, ball.color);
-  drawScore(user.score, canvas.width / 4, canvas.height / 5);
   drawRectangle(com.x, com.y, com.width, com.height, com.color);
   drawScore(com.score, (canvas.width / 4) * 3, canvas.height / 5);
-  drawRectangle(user.x, user.y, user.width, user.height, user.color);
 }
 
 function fullGame() {
