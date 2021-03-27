@@ -8,9 +8,24 @@
 }
 
 body {
-  background-color: #f8f8f8;
+  min-height: 100vh;
+  background-color: rgb(104, 104, 104);
 }
 
-h1 {
-  font-weight: 400;
+h2 {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+}
+
+.pong {
+  border: 3px solid #fff;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
